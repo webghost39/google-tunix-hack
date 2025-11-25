@@ -1,0 +1,10 @@
+How to run the gemma2-2b demo
+
+1. Go to https://wandb.ai/ to sign up an account
+Get the api key, then go the notebook you copied on kaggle then go to Add-ons on the menu
+Click secrets to add a new secret with label WANDB_API_KEY and value is your api key
+2. Go your kaggle settings and get your username and create an api key
+Then create two secrets one with label KAGGLE_USERNAME with your user name and anther one with KAGGLE_KEY with your api key
+3. Import the notebook in this repo, then click run all to run it. It would take around 1hr 20 minutes to finish. It is very likely failed because of session timeout so you can run it in background. To run it in background, click the save version button and change the version type to save & run all(commit) also in the advanced settings change it to save output.
+
+The notebook I shared would failed after training finished since I commented out the wandb.init(project='tunix'), you can uncomment it to check if it works. 
