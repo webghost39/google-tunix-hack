@@ -38,6 +38,4 @@
   2. Change version type to **Save & Run All (Commit)**
   3. In Advanced Settings, enable **Save Output**
 
-### 4. W&B Integration
-
-The shared notebook has `wandb.init(project='tunix')` commented out to prevent errors. You can uncomment this line to enable full W&B tracking and verify functionality.
+The notebook I shared would failed after training finished since I commented out the `wandb.init(project='tunix')`, you can uncomment it to check if it works.
